@@ -4,7 +4,7 @@
     },
     "homepage": "https://github.com/prestationweb42/Dev-Tools-WebSite",
     "scripts": {
-        "predeploy": "npm run build",
+        "build": "npm run build",
         "deploy": "gh-pages -d build"
     }
 }
