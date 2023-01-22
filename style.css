@@ -1,0 +1,148 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title-page {
+    text-align: center;
+    padding: 15px;
+    background-color: burlywood;
+}
+.navbar-nav {
+    margin: 0 50px;
+}
+.navbar-brand {
+    width: auto;
+    font-size: 2em;
+    padding: 0 10px;
+    margin: 0 50px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 5px #555555, -5px -5px 5px #ffffff;
+}
+.nav-link {
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 5px #555555, -5px -5px 5px #ffffff;
+}
+.active {
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+li {
+    font: 1rem "Fira Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Setting hr */
+hr {
+    width: 50%;
+    margin: 0 auto;
+}
+/* Setting container */
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+/* Setting background container */
+.home {
+    background: wheat;
+    min-height: 75vh;
+}
+.home5 {
+    height: 40vh;
+}
+.formation {
+    background: cornsilk;
+    min-height: 65vh;
+}
+.administratif {
+    background: powderblue;
+    min-height: 50vh;
+}
+.affiliation {
+    background: teal;
+    min-height: 85vh;
+}
+@media screen and (max-width: 1200px) {
+    .home,
+    .formation,
+    .administratif,
+    .affiliation {
+        height: auto;
+    }
+}
+.affiliation h3 {
+    color: white;
+}
+p {
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+}
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.ordered-list {
+    min-height: 100px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: rgb(253, 251, 241);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 255, 0.123);
+}
+
+/* size colonnes */
+.section {
+    min-width: 300px;
+}
+
+/**** Scroll top ****/
+.scrolltop {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    color: black;
+    background: #fff;
+    border-radius: 0.4rem;
+    z-index: 100;
+    transition: 0.4s;
+    visibility: hidden;
+    text-decoration: none;
+}
+
+.scrolltop:hover {
+    color: #fff;
+    background-color: #000000b0;
+    transition: 0.4s;
+}
+
+.scrolltop__icon {
+    font-size: 50px;
+}
+
+/* Show scrolltop */
+.active {
+    visibility: visible;
+}
