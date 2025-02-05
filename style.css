@@ -77,6 +77,9 @@ hr {
     background: powderblue;
     min-height: 50vh;
 }
+.administratif.givre {
+    background: #80d0d0;
+}
 .affiliation {
     background: teal;
     min-height: 85vh;
